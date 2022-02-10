@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="commons-collections4-4.1">
+    <CLASSES>
+      <root url="jar://F:/MS MIS/Enterprise application development/Grp assi 2/commons-collections4-4.1.jar!/" />
+      <root url="jar://F:/MS MIS/Enterprise application development/Grp assi 2/poi-3.17.jar!/" />
+      <root url="jar://F:/MS MIS/Enterprise application development/Grp assi 2/poi-ooxml-3.17.jar!/" />
+      <root url="jar://F:/MS MIS/Enterprise application development/Grp assi 2/poi-ooxml-schemas-3.17.jar!/" />
+      <root url="jar://F:/MS MIS/Enterprise application development/Grp assi 2/xmlbeans-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

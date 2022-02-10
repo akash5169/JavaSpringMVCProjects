@@ -1,0 +1,11 @@
+#addButton {
+-fx-background-color: rgba(51, 204, 51,.80);
+}
+
+#deleteButton {
+-fx-background-color: rgba(204, 0, 0,.80);
+}
+
+#updateButton {
+-fx-background-color: rgba(102, 153, 255,.80);
+}

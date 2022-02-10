@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventoryController">
+    <VBox spacing="10.0">
+        <HBox spacing="10.0">
+            <TextField fx:id="searchField" onKeyPressed="#search_product" layoutX="25.0" layoutY="26.0" prefWidth="250.0" promptText="Search for the product(s)" AnchorPane.leftAnchor="20.0" />
+            <Button fx:id="addButton" onAction="#addProd" text="Add new product" />
+                <Button fx:id="updateButton" onAction="#updateProd" text="Update"/>
+                <Button fx:id="deleteButton" onAction="#deleteProd" text="Delete" />
+            <HBox.margin>
+               <Insets left="150.0" />
+            </HBox.margin>
+        </HBox>
+
+
+            <TableView fx:id="invTable" layoutX="25.0" layoutY="80.0" prefHeight="300.0" prefWidth="877.0">
+                <columns>
+                    <TableColumn fx:id="cBox" prefWidth="20.0" text="..." />
+                    <TableColumn fx:id="pid" prefWidth="100.0" text="Product ID" />
+                    <TableColumn fx:id="pcat" prefWidth="93.0" text="Category" />
+                    <TableColumn fx:id="ptype" minWidth="1.0" prefWidth="56.0" text="Type" />
+                    <TableColumn fx:id="pbov" minWidth="1.0" prefWidth="56.0" text="Brand/Vari" />
+                    <TableColumn fx:id="pplc" prefWidth="61.0" text="Place" />
+                    <TableColumn fx:id="pwei" prefWidth="57.0" text="Weight" />
+                    <TableColumn fx:id="puni" prefWidth="57.0" text="Unit" />
+                    <TableColumn fx:id="pmnf" prefWidth="127.0" text="Manufacturing Date" />
+                    <TableColumn fx:id="pexp" prefWidth="107.0" text="Expiration Date" />
+                    <TableColumn fx:id="ppri" prefWidth="77.0" text="Price" />
+                    <TableColumn fx:id="ptax" prefWidth="47.0" text="Tax" />
+                    <TableColumn fx:id="pdisc" prefWidth="57.0" text="Discount" />
+                    <TableColumn fx:id="psup" prefWidth="69.0" text="Supplier" />
+                </columns>
+            </TableView>
+
+    </VBox>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</ScrollPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="620.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddController">
+   <VBox prefHeight="620" prefWidth="250.0" spacing="5.0">
+
+       <HBox spacing="5.0">
+           <Label layoutX="35.0" layoutY="23.0" text="Product ID:" />
+           <Label fx:id="prodId" />
+       </HBox>
+
+      <Label layoutX="35.0" layoutY="23.0" text="Choose Category" />
+      <ComboBox fx:id="pcat" onAction="#iniSup" prefWidth="150.0" />
+       <Label layoutX="36.0" layoutY="78.0" text="Type" />
+       <TextField fx:id="ptype" layoutX="36.0" layoutY="104.0" promptText="Enter Type" />
+       <Label text="Brand/Variety" />
+
+       <TextField fx:id="pbov" layoutX="36.0" layoutY="104.0" promptText="Enter Brand or Variety" />
+       <Label text="Choose Place" />
+      <ComboBox fx:id="pplc" prefWidth="150.0" />
+       <Label text="Weight" />
+       <TextField fx:id="pwei" layoutX="36.0" layoutY="104.0" promptText="Enter Weight" />
+       <Label layoutX="35.0" layoutY="23.0" text="Choose Unit" />
+      <ComboBox fx:id="puni" prefWidth="150.0" />
+       <Label text="Select Manufactured Date" />
+       <DatePicker fx:id="pmfn"/>
+       <Label text="Select Expiration Date" />
+       <DatePicker fx:id="pexp"/>
+       <Label text="Price" />
+       <TextField fx:id="ppri" layoutX="36.0" layoutY="104.0" promptText="Enter Price in $" />
+       <Label text="Tax" />
+       <TextField fx:id="ptax" layoutX="36.0" layoutY="104.0" promptText="Enter Tax %" />
+       <Label text="Discount" />
+       <TextField fx:id="pdisc" layoutX="36.0" layoutY="104.0" promptText="Enter Discount" />
+
+       <Label text="Choose Supplier" />
+      <ComboBox fx:id="psup" prefWidth="150.0" />
+       <HBox spacing="10.0">
+
+           <Button fx:id="add" onAction="#addProd" style="-fx-background-color: rgba(51, 204, 51,.80);" text="Add" />
+           <Button fx:id="cancel" onAction="#cancel" style="-fx-background-color: #82CAFF;" text="Cancel" />
+       </HBox>
+
+      <padding>
+         <Insets left="20.0" right="20.0" top="20.0" />
+      </padding>
+   </VBox>
+</ScrollPane>

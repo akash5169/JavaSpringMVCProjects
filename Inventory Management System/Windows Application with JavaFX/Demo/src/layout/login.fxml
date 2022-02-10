@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+
+        <children>
+            <Label layoutX="128.0" layoutY="26.0" prefHeight="54.0" prefWidth="154.0" style="-fx-text-fill: #848482;" text="AJZ MART" textAlignment="CENTER" underline="true">
+                <font>
+                    <Font name="Tahoma Bold" size="30.0" />
+                </font>
+            </Label>
+            <TextField fx:id="txt_user" layoutX="82.0" layoutY="165.0" prefHeight="38.0" prefWidth="243.0" promptText="Username" />
+            <PasswordField fx:id="txt_pass" layoutX="82.0" layoutY="231.0" prefHeight="38.0" prefWidth="243.0" promptText="Password" />
+            <Button fx:id="log" onAction="#checkCred" layoutX="122.0" layoutY="328.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" style="-fx-background-color: #1589FF; -fx-background-radius: 15px; -fx-text-fill: #FFFFFF;" text="Login" />
+            <Label layoutX="163.0" layoutY="100.0" prefHeight="18.0" prefWidth="73.0" style="-fx-text-fill: #82CAFF;" text="Login" textAlignment="CENTER" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="160.0">
+                <font>
+                    <Font name="Calibri Bold" size="32.0" />
+                </font>
+            </Label>
+        </children>
+    </AnchorPane>
